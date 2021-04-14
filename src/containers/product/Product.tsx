@@ -3,6 +3,7 @@ import Footer from '../footer/Footer'
 import Header from '../header/Header'
 import MobileMenuContainer from '../../components/mobile-menu-container/MobileMenuContainer'
 import Slider from 'react-slick'
+import { Link } from 'react-router-dom'
 
 const Product = () => {
     const settings = {
@@ -457,9 +458,9 @@ const Product = () => {
                                 <div className="product product-7 text-center">
                                     <figure className="product-media">
                                         <span className="product-label label-new">New</span>
-                                        <a href="product.html">
+                                        <Link to="/product">
                                             <img src="assets/images/products/product-4.jpg" alt="Product image" className="product-image" />
-                                        </a>
+                                        </Link>
 
                                         <div className="product-action-vertical">
                                             <a href="#" className="btn-product-icon btn-wishlist btn-expandable">
@@ -521,9 +522,9 @@ const Product = () => {
                                 <div className="product product-7 text-center">
                                     <figure className="product-media">
                                         <span className="product-label label-out">Out of Stock</span>
-                                        <a href="product.html">
+                                        <Link to="/product">
                                             <img src="assets/images/products/product-6.jpg" alt="Product image" className="product-image" />
-                                        </a>
+                                        </Link>
 
                                         <div className="product-action-vertical">
                                             <a href="#" className="btn-product-icon btn-wishlist btn-expandable">
@@ -574,13 +575,13 @@ const Product = () => {
                                 <div className="product product-7 text-center">
                                     <figure className="product-media">
                                         <span className="product-label label-top">Top</span>
-                                        <a href="product.html">
+                                        <Link to="/product">
                                             <img
                                                 src="assets/images/products/product-11.jpg"
                                                 alt="Product image"
                                                 className="product-image"
                                             />
-                                        </a>
+                                        </Link>
 
                                         <div className="product-action-vertical">
                                             <a href="#" className="btn-product-icon btn-wishlist btn-expandable">
@@ -641,13 +642,13 @@ const Product = () => {
 
                                 <div className="product product-7 text-center">
                                     <figure className="product-media">
-                                        <a href="product.html">
+                                        <Link to="/product">
                                             <img
                                                 src="assets/images/products/product-10.jpg"
                                                 alt="Product image"
                                                 className="product-image"
                                             />
-                                        </a>
+                                        </Link>
 
                                         <div className="product-action-vertical">
                                             <a href="#" className="btn-product-icon btn-wishlist btn-expandable">
@@ -695,9 +696,9 @@ const Product = () => {
 
                                 <div className="product product-7 text-center">
                                     <figure className="product-media">
-                                        <a href="product.html">
+                                        <Link to="/product">
                                             <img src="assets/images/products/product-7.jpg" alt="Product image" className="product-image" />
-                                        </a>
+                                        </Link>
 
                                         <div className="product-action-vertical">
                                             <a href="#" className="btn-product-icon btn-wishlist btn-expandable">

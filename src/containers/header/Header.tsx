@@ -5,6 +5,8 @@ import ModalLoginSingin from '../../components/modal-login-signin/ModalLoginSing
 import { mockCategoryList, mockProductList } from '../../constants/data'
 
 const Header = () => {
+    const pathname = window.location.pathname
+
     return (
         <div className="page-wrapper">
             <header className="header header-6">
@@ -210,10 +212,11 @@ const Header = () => {
                         <div className="header-left">
                             <nav className="main-nav">
                                 <ul className="menu sf-arrows">
-                                    <li className="megamenu-container active">
+                                    <li className={`megamenu-container ${pathname === '/' ? 'active' : ''}`}>
                                         <Link to="/">Trang chủ</Link>
                                     </li>
-                                    <li>
+
+                                    <li className={`${['/category-list', '/category'].includes(pathname) ? 'active' : ''}`}>
                                         <Link className="sf-with-ul" to="/category">
                                             Danh mục
                                         </Link>
@@ -268,7 +271,7 @@ const Header = () => {
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li className={`${pathname === '/product' ? 'active' : ''}`}>
                                         <Link to="/product" className="sf-with-ul">
                                             Product
                                         </Link>
@@ -355,7 +358,7 @@ const Header = () => {
                                             </li>
                                         </ul>
                                     </li> */}
-                                    <li>
+                                    <li className={`${['/blog-list', '/blog-detail'].includes(pathname) ? 'active' : ''}`}>
                                         <Link to="/blog-list">Blog</Link>
                                         {/* <ul>
                                             <li>

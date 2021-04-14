@@ -16,7 +16,7 @@ const CategoryList = () => {
                         }}>
                         <div className="container">
                             <h1 className="page-title">
-                                Grid 4 Columns<span>Shop</span>
+                                Category<span>Shop</span>
                             </h1>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const CategoryList = () => {
                                     <a href="#">Shop</a>
                                 </li>
                                 <li className="breadcrumb-item active" aria-current="page">
-                                    Grid 4 Columns
+                                    Category
                                 </li>
                             </ol>
                         </div>
