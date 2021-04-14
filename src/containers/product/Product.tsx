@@ -2,8 +2,17 @@ import React from 'react'
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
 import MobileMenuContainer from '../../components/mobile-menu-container/MobileMenuContainer'
+import Slider from 'react-slick'
 
 const Product = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    }
+
     return (
         <>
             <div className="page-wrapper">
@@ -444,34 +453,7 @@ const Product = () => {
 
                             <h2 className="title text-center mb-4">You May Also Like</h2>
 
-                            <div
-                                className="owl-carousel owl-simple carousel-equal-height carousel-with-shadow"
-                                data-toggle="owl"
-                                data-owl-options='{
-                            "nav": false, 
-                            "dots": true,
-                            "margin": 20,
-                            "loop": false,
-                            "responsive": {
-                                "0": {
-                                    "items":1
-                                },
-                                "480": {
-                                    "items":2
-                                },
-                                "768": {
-                                    "items":3
-                                },
-                                "992": {
-                                    "items":4
-                                },
-                                "1200": {
-                                    "items":4,
-                                    "nav": true,
-                                    "dots": false
-                                }
-                            }
-                        }'>
+                            <Slider {...settings}>
                                 <div className="product product-7 text-center">
                                     <figure className="product-media">
                                         <span className="product-label label-new">New</span>
@@ -760,7 +742,7 @@ const Product = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Slider>
                         </div>
                     </div>
                 </main>

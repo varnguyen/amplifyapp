@@ -1,6 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
 
 const BlogPost = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    }
+
     return (
         <div className="blog-posts">
             <div className="container">
@@ -9,37 +19,12 @@ const BlogPost = () => {
                     <p className="title-desc">Donec nec justo eget felis facilisis fermentum.</p>
                 </div>
 
-                <div
-                    className="owl-carousel owl-simple mb-4"
-                    data-toggle="owl"
-                    data-owl-options='{
-                            "nav": false, 
-                            "dots": true,
-                            "items": 3,
-                            "margin": 20,
-                            "loop": false,
-                            "responsive": {
-                                "0": {
-                                    "items":1
-                                },
-                                "600": {
-                                    "items":2
-                                },
-                                "992": {
-                                    "items":3
-                                },
-                                "1200": {
-                                    "items":3,
-                                    "nav": true,
-                                    "dots": false
-                                }
-                            }
-                        }'>
+                <Slider {...settings}>
                     <article className="entry">
                         <figure className="entry-media">
-                            <a href="single.html">
+                            <Link to="/blog-detail">
                                 <img src="assets/images/demos/demo-17/blog/post-1.jpg" alt="image desc" />
-                            </a>
+                            </Link>
                         </figure>
 
                         <div className="entry-body">
@@ -48,22 +33,22 @@ const BlogPost = () => {
                             </div>
 
                             <h3 className="entry-title">
-                                <a href="single.html">Sed adipiscing ornare.</a>
+                                <Link to="/blog-detail">Sed adipiscing ornare.</Link>
                             </h3>
 
                             <div className="entry-content">
-                                <a href="single.html" className="read-more">
+                                <Link to="/blog-detail" className="read-more">
                                     Read More
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </article>
 
                     <article className="entry">
                         <figure className="entry-media">
-                            <a href="single.html">
+                            <Link to="/blog-detail">
                                 <img src="assets/images/demos/demo-17/blog/post-2.jpg" alt="image desc" />
-                            </a>
+                            </Link>
                         </figure>
 
                         <div className="entry-body">
@@ -73,22 +58,22 @@ const BlogPost = () => {
                             </div>
 
                             <h3 className="entry-title">
-                                <a href="single.html">Aenean dignissim pellentesque felis.</a>
+                                <Link to="/blog-detail">Aenean dignissim pellentesque felis.</Link>
                             </h3>
 
                             <div className="entry-content">
-                                <a href="single.html" className="read-more">
+                                <Link to="/blog-detail" className="read-more">
                                     Read More
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </article>
 
                     <article className="entry">
                         <figure className="entry-media">
-                            <a href="single.html">
+                            <Link to="/blog-detail">
                                 <img src="assets/images/demos/demo-17/blog/post-3.jpg" alt="image desc" />
-                            </a>
+                            </Link>
                         </figure>
 
                         <div className="entry-body">
@@ -97,22 +82,22 @@ const BlogPost = () => {
                             </div>
 
                             <h3 className="entry-title">
-                                <a href="single.html">Quisque volutpat mattis eros.</a>
+                                <Link to="/blog-detail">Quisque volutpat mattis eros.</Link>
                             </h3>
 
                             <div className="entry-content">
-                                <a href="single.html" className="read-more">
+                                <Link to="/blog-detail" className="read-more">
                                     Read More
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </article>
 
                     <article className="entry">
                         <figure className="entry-media">
-                            <a href="single.html">
+                            <Link to="/blog-detail">
                                 <img src="assets/images/demos/demo-17/blog/post-2.jpg" alt="image desc" />
-                            </a>
+                            </Link>
                         </figure>
 
                         <div className="entry-body">
@@ -121,23 +106,23 @@ const BlogPost = () => {
                             </div>
 
                             <h3 className="entry-title">
-                                <a href="single.html">Aenean dignissim pellentesque felis.</a>
+                                <Link to="/blog-detail">Aenean dignissim pellentesque felis.</Link>
                             </h3>
 
                             <div className="entry-content">
-                                <a href="single.html" className="read-more">
+                                <Link to="/blog-detail" className="read-more">
                                     Read More
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </article>
-                </div>
+                </Slider>
 
                 <div className="more-container text-center">
-                    <a href="blog.html" className="btn btn-outline-darker btn-more">
+                    <Link to="/blog-list" className="btn btn-outline-darker btn-more">
                         <span>View more articles</span>
                         <i className="icon-long-arrow-right"></i>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* <hr className="mb-5"> */}

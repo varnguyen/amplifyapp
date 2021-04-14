@@ -156,6 +156,24 @@ const mockCommentLists = [
 
 const mockNewLink = [
     {
+        img1: 'assets/images/demos/demo-17/products/product-3.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-3-2.jpg',
+        category: 'Clothing',
+        title: 'Paper bag trousers',
+        price: '$60.00',
+        colors: [
+            { background: '#9fac76', name: 'Color name' },
+            { background: '#333333', name: 'Color name' }
+        ]
+    },
+    {
+        img1: 'assets/images/demos/demo-17/products/product-7.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-7-2.jpg',
+        category: 'Handbags',
+        title: 'Paper straw shopper',
+        price: '$398.00'
+    },
+    {
         status: 'new',
         img1: 'assets/images/demos/demo-17/products/product-1.jpg',
         img2: 'assets/images/demos/demo-17/products/product-1-2.jpg',
@@ -175,24 +193,6 @@ const mockNewLink = [
         title: 'Sandals with lacing',
         new_price: 'Now $70.00',
         old_price: 'Was $84.00'
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-3.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-3-2.jpg',
-        category: 'Clothing',
-        title: 'Paper bag trousers',
-        price: '$60.00',
-        colors: [
-            { background: '#9fac76', name: 'Color name' },
-            { background: '#333333', name: 'Color name' }
-        ]
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-7.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-7-2.jpg',
-        category: 'Handbags',
-        title: 'Paper straw shopper',
-        price: '$398.00'
     },
     {
         img1: 'assets/images/demos/demo-17/products/product-4.jpg',
@@ -232,6 +232,25 @@ const mockNewLink = [
 
 const mockFeaturedLink = [
     {
+        img1: 'assets/images/demos/demo-17/products/product-7.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-7-2.jpg',
+        category: 'Handbags',
+        title: 'Paper straw shopper',
+        price: '$398.00'
+    },
+    {
+        img1: 'assets/images/demos/demo-17/products/product-4.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-4-2.jpg',
+        category: 'Handbags',
+        title: 'Bucket bag',
+        price: '$350.00',
+        colors: [
+            { background: '#e3a84d', name: 'Color name' },
+            { background: '#f48a5b', name: 'Color name' },
+            { background: '#333333', name: 'Color name' }
+        ]
+    },
+    {
         status: 'new',
         img1: 'assets/images/demos/demo-17/products/product-1.jpg',
         img2: 'assets/images/demos/demo-17/products/product-1-2.jpg',
@@ -260,25 +279,6 @@ const mockFeaturedLink = [
         price: '$60.00',
         colors: [
             { background: '#9fac76', name: 'Color name' },
-            { background: '#333333', name: 'Color name' }
-        ]
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-7.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-7-2.jpg',
-        category: 'Handbags',
-        title: 'Paper straw shopper',
-        price: '$398.00'
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-4.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-4-2.jpg',
-        category: 'Handbags',
-        title: 'Bucket bag',
-        price: '$350.00',
-        colors: [
-            { background: '#e3a84d', name: 'Color name' },
-            { background: '#f48a5b', name: 'Color name' },
             { background: '#333333', name: 'Color name' }
         ]
     },
@@ -308,6 +308,28 @@ const mockFeaturedLink = [
 
 const mockBestLink = [
     {
+        img1: 'assets/images/demos/demo-17/products/product-5.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-5-2.jpg',
+        category: 'Clothing',
+        title: 'Silk-blend kaftan',
+        price: '$370.00'
+    },
+    {
+        img1: 'assets/images/demos/demo-17/products/product-6.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-6-2.jpg',
+        category: 'Clothing',
+        title: 'Linen-blend jumpsuit',
+        price: '$595.00'
+    },
+    {
+        img1: 'assets/images/demos/demo-17/products/product-8.jpg',
+        img2: 'assets/images/demos/demo-17/products/product-8-2.jpg',
+        category: 'Shoes',
+        title: 'Sandals',
+        new_price: 'Now $120.00',
+        old_price: 'Was $140.00'
+    },
+    {
         status: 'new',
         img1: 'assets/images/demos/demo-17/products/product-1.jpg',
         img2: 'assets/images/demos/demo-17/products/product-1-2.jpg',
@@ -357,28 +379,6 @@ const mockBestLink = [
             { background: '#f48a5b', name: 'Color name' },
             { background: '#333333', name: 'Color name' }
         ]
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-5.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-5-2.jpg',
-        category: 'Clothing',
-        title: 'Silk-blend kaftan',
-        price: '$370.00'
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-6.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-6-2.jpg',
-        category: 'Clothing',
-        title: 'Linen-blend jumpsuit',
-        price: '$595.00'
-    },
-    {
-        img1: 'assets/images/demos/demo-17/products/product-8.jpg',
-        img2: 'assets/images/demos/demo-17/products/product-8-2.jpg',
-        category: 'Shoes',
-        title: 'Sandals',
-        new_price: 'Now $120.00',
-        old_price: 'Was $140.00'
     }
 ]
 

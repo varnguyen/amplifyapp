@@ -4,8 +4,16 @@ import Footer from '../../footer/Footer'
 import MobileMenuContainer from '../../../components/mobile-menu-container/MobileMenuContainer'
 import Sidebar from '../sidebar/Sidebar'
 import Comment from '../comment/Comment'
+import Slider from 'react-slick'
 
 const BlogDetail = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    }
     return (
         <>
             <div className="page-wrapper">
@@ -217,26 +225,7 @@ const BlogDetail = () => {
                                     <div className="related-posts">
                                         <h3 className="title">Related Posts</h3>
 
-                                        <div
-                                            className="owl-carousel owl-simple"
-                                            data-toggle="owl"
-                                            data-owl-options={{
-                                                nav: false,
-                                                dots: true,
-                                                margin: 20,
-                                                loop: false,
-                                                responsive: {
-                                                    '0': {
-                                                        items: 1
-                                                    },
-                                                    '480': {
-                                                        items: 2
-                                                    },
-                                                    '768': {
-                                                        items: 3
-                                                    }
-                                                }
-                                            }}>
+                                        <Slider {...settings}>
                                             <article className="entry entry-grid">
                                                 <figure className="entry-media">
                                                     <a href="single.html">
@@ -332,7 +321,7 @@ const BlogDetail = () => {
                                                     </div>
                                                 </div>
                                             </article>
-                                        </div>
+                                        </Slider>
                                     </div>
                                     <Comment />
                                 </div>

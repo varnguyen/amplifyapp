@@ -1,6 +1,15 @@
 import React from 'react'
+import Slider from 'react-slick'
 
 const Social = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    }
+
     return (
         <div className="container-fluid">
             <div className="heading text-center">
@@ -8,33 +17,7 @@ const Social = () => {
                 <p className="title-desc">Donec nec justo eget felis facilisis fermentum.</p>
             </div>
 
-            <div
-                className="owl-carousel owl-simple"
-                data-toggle="owl"
-                data-owl-options={{
-                    nav: false,
-                    dots: false,
-                    items: 5,
-                    margin: 20,
-                    loop: false,
-                    responsive: {
-                        '0': {
-                            items: 2
-                        },
-                        '360': {
-                            items: 2
-                        },
-                        '600': {
-                            items: 3
-                        },
-                        '992': {
-                            items: 4
-                        },
-                        '1200': {
-                            items: 5
-                        }
-                    }
-                }}>
+            <Slider {...settings}>
                 <div className="instagram-feed">
                     <img src="assets/images/demos/demo-17/instagram/1.jpg" alt="img" />
 
@@ -99,7 +82,7 @@ const Social = () => {
                         </a>
                     </div>
                 </div>
-            </div>
+            </Slider>
         </div>
     )
 }
